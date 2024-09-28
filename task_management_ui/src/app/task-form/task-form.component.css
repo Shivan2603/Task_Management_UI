@@ -1,0 +1,157 @@
+body {
+  font-family: 'Roboto', sans-serif; 
+  background-color: #f4f4f4; 
+}
+
+.container {
+  max-width: 910px; 
+}
+
+.modal-content {
+  border: none; 
+  border-radius: 12px; 
+  box-shadow: 0px 12px 30px rgba(0, 0, 0, 0.15); 
+  background-color: #ffffff;
+  width: 910px;
+  max-width: 100%; 
+  transform-style: preserve-3d;
+}
+
+.modal-header {
+  border-bottom: none; 
+  background: linear-gradient(45deg, #007bff, #0056b3); 
+  color: white; 
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  position: relative;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.modal-title {
+  font-weight: 500;
+  font-size: 1.2rem; 
+}
+
+.btn-close {
+  position: absolute; 
+  top: 15px; 
+  right: 15px;
+  z-index: 1;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
+
+.form-floating > .form-control {
+  height: calc(3.5rem + 2px);
+  padding: 1rem 0.75rem;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #f5f7fa, #e9ecef);
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-floating > label {
+  padding: 1rem 0.75rem;
+  transform-origin: 0 0;
+  transition: transform 0.2s ease;
+}
+
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label {
+  transform: translateY(-1.2rem) scale(0.8);
+  color: #007bff; 
+}
+
+.form-control:focus {
+  background: linear-gradient(135deg, #ffffff, #f0f2f5);
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25), inset 0 2px 5px rgba(0, 0, 0, 0.15);
+  outline: none;
+}
+
+.form-floating > .form-control:hover {
+  background: linear-gradient(135deg, #ffffff, #f0f2f5);
+}
+
+.form-floating > textarea.form-control {
+  resize: vertical;
+  min-height: 8rem;
+}
+
+.form-label {
+  color: #333; 
+  font-weight: 500;
+}
+
+.submit-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 500;
+  padding: 0.75rem 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.submit-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); 
+}
+
+.form-check-input {
+  width: 3rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  background-color: #e0e0e0;
+  border: none;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  appearance: none;
+  cursor: pointer;
+}
+
+.form-check-input:checked {
+  background-color: #28a745;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-check-input:checked:before {
+  transform: translateX(1.5rem); 
+}
+
+.form-check-label {
+  margin-left: 1rem; 
+}
+
+.invalid-feedback {
+  font-size: 0.875em; 
+  color: #dc3545; 
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end; 
+  padding: 20px;
+}
+
+.modal-footer button {
+  margin-left: 10px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.modal-dialog.modal-dialog-centered { 
+  position: fixed;
+  top: 50%;
+  left: 50%; 
+  transform: translate(-50%, -50%);
+  backdrop-filter: blur(5px); 
+}
+
+@media (max-width: 992px) {
+  .modal-content {
+    width: 100%; 
+  }
+}
